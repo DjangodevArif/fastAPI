@@ -54,7 +54,6 @@ def create_jwt(data: dict):
 
 def getUserbyToken(db, token: str):
     try:
-        check = jwt
         payload = jwt.decode(token, SECRET_KEY, ALGORITHM)
     except JWTError as e:
         print('>>>>>>>> payload', e)

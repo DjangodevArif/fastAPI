@@ -1,10 +1,10 @@
-from chat.routers.users.crud import ALGORITHM, SECRET_KEY
+from routers.users.crud import ALGORITHM, SECRET_KEY
 from fastapi.exceptions import HTTPException
 from fastapi.security.utils import get_authorization_scheme_param
 from fastapi import status, Request
 from jose import JWTError, jwt
 
-from .database import SessionLocal
+from database import SessionLocal
 
 
 def get_db():

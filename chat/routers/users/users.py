@@ -5,7 +5,7 @@ from . import crud, schemas
 from fastapi import APIRouter, HTTPException, status, Request
 from fastapi.security.utils import get_authorization_scheme_param
 from sqlalchemy.orm.session import Session
-from ...dependencies import get_db, getAuthenticity
+from dependencies import get_db, getAuthenticity
 
 router = APIRouter(tags=["User"])
 
