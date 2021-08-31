@@ -6,7 +6,7 @@ from pydantic import BaseModel
 class PrivateChatRoomCreate(BaseModel):
     user1: int
     user2: int
-    connected_user: List(UserRes)
+    connected_user: List[UserRes]
 
 
 class PrivateChatRoomRes(PrivateChatRoomCreate):

@@ -42,9 +42,9 @@ def run_migrations_offline():
     script output.
 
     """
-    from database import SQLALCHEMY_DATABASE_URL
-    # url = config.get_main_option("sqlalchemy.url")
-    url = SQLALCHEMY_DATABASE_URL
+    # from database import SQLALCHEMY_DATABASE_URL
+    url = config.get_main_option("sqlalchemy.url")
+    # url = SQLALCHEMY_DATABASE_URL
     context.configure(
         url=url,
         target_metadata=target_metadata,
